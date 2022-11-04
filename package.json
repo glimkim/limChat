@@ -1,0 +1,31 @@
+{
+  "name": "chatroom_ver1.0",
+  "version": "1.0.0",
+  "description": "LimChat_with express.js & socket.io",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellolimi/JavaScript-Works.git"
+  },
+  "keywords": [
+    "express.js",
+    "socket.io",
+    "javascript"
+  ],
+  "author": "Lim Kim <ltbllim@gmail.com> (https://github.com/hellolimi)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellolimi/JavaScript-Works/issues"
+  },
+  "homepage": "https://github.com/hellolimi/JavaScript-Works#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "socket.io": "^4.0.1"
+  }
+}

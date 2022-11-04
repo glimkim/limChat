@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LIMchat - RealTime Chat</title>
+
+        <link rel="shorcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/ios_icon.png">
+        <link rel="icon" sizes="192x192" href="images/android_icon.png">
+
+
+        <link rel="stylesheet" href="css/chat.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="loader">
+                <img src="images/logo.png" alt="로고 이미지">
+            </div>
+            <header>
+                <a href="/"><img src="images/logo_simple.png" alt="로고"></a>
+            </header>
+            <div class="select01">
+                <div class="wrap">
+                    <label for="nickname">Enter your nickname.</label>
+                    <input type="text" name="nickname" id="nickname">
+                    <button type="submit" id="next01">Next</button>
+                </div>
+            </div>
+            <div class="select02">
+                <div class="wrap">
+                    <figure class="profilePicture">
+                        <img class="myPicture" src="images/profile.png" alt="프로필 이미지" width="100">
+                    </figure>
+                    <p>Choose your profile picture.</p>
+                    <input type="file" id="selectPicture" onchange="setProfile(event)">
+                    <label for="selectPicture">Select an image</label>
+                    
+                    <button id="next02">Next</button>
+                </div>
+            </div>
+            <div class="chatRoom">
+                <div class="displayContainer">
+                    <ul class="chatList">
+                        
+                    </ul>
+                </div>
+                <div class="inputContainer">
+                    <label class="away">채팅창</label>
+                    <input type="text" id="message">
+                    <button id="send">Send</button>
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/chat.js"></script>
+    </body>
+</html>
